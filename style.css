@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#about{
+    min-height: 100vh;
+    height: auto;
+    padding:90px 0 ;
+    width: 100%;
+    background: #006D77;
+  }
+  
+  .abt-card{
+    position: relative;
+    height: 160px;
+    /* margin: 100px 0; */
+    width: 300px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    transition: .3s;
+  }
+  .abt-card:hover{
+    height: 350px;
+  
+  }
+  .abt-card:hover .imgbx{
+    height: 200px;
+    width: 200px;
+  }
+  
+  .abt-card .container:nth-child(2){
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .abt-card:hover .container:nth-child(2) .detail{
+    transform: translateY(0px);
+  
+  }
+  .abt-card .imgbx{
+    transition: .3s;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    
+    background-color: aliceblue;
+    left: 50%;
+    transform: translate(-50%);
+    top: -70px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+  }
+  .abt-card .imgbx img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .abt-card .detail{
+    transform: translateY(130px);
+    text-align: center;
+    transition: .3s;
+    width: 100%;
+  }
+  .abt-card .container:nth-child(2) .detail h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+  }
+  .abt-card .container:nth-child(2) .detail h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: .5;
+  }
+  
+  .abt-card .container:nth-child(2) .detail .data{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .abt-card .container:nth-child(2) .detail .data a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    padding: 10px;
+  }
+  .abt-card .container:nth-child(2) .detail .data h5{
+    font: 1.2rem;
+    border: 1px solid red;
+  
+  }
+  
+  .abt-card .container:nth-child(2) .detail .action{
+    display: flex;
+    height: 60px;
+    gap: 20px;
+    align-items: end;
+    justify-content: space-between;
+  }
+  .abt-card .container:nth-child(2) .detail .action button{
+    background: #17c1d0;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    height: min-content;
+    font-size: 1.1em;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.35);
+    transition: 0.2s;
+    border: none;
+    padding: 12px 22px;
+    width: 50%;
+  }
+  .abt-card .container:nth-child(2) .detail .action button:hover{
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.35);
+  margin-bottom: 5px;
+  }
+  .abt-card .container:nth-child(2) .detail .action button:active{
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.35);
+    margin-bottom: 0px;
+  
+  }
+
+  .button{
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: #17c1d0;
+    box-shadow: 5px 6px 0 black;
+  }
+  .button:hover{
+   margin-bottom: 5px;
+    box-shadow: 7px 9px 0 black;
+
+  }
+  .button:active{
+    margin-bottom: 0;
+    box-shadow: 5px 6px 0 black;
+   
+  }
